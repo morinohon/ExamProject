@@ -1,8 +1,8 @@
 public interface Creature {
-    public boolean isAlive();
-    public void showStatus();
-    public void attack(Creature target);
-    public String getName();
-    public int getHp();
-    public int setHp(int hp);
+     boolean isAlive();
+     void showStatus();
+     void attack(Creature target);
+     String getName();
+     int getHp();
+     void setHp(int hp);
 }
