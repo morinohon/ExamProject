@@ -19,6 +19,8 @@ public abstract class Character implements Creature{
         System.out.println("[" + this.name + "]" + ":HP[" + this.hp + "]" );
     }
     private void setHp(){
-        this.hp = hp;
+        if(hp > 0){
+            this.hp = hp;
+        }
     }
 }
