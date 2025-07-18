@@ -5,7 +5,8 @@ public class Matango extends Monster{
 
     @Override
     public void attack(Creature target) {
-        System.out.println(this.getName() + "は体当たり攻撃！" + target.getName() + "に6のダメージを与えた！");
-        target.setHp(this.getHp() - 6);
+        int damage = 6;
+        System.out.println(this.getName() + getSuffix() + "は体当たり攻撃！" + target.getName() + "に6のダメージを与えた！");
+        target.setHp(this.getHp() - damage);
     }
 }
