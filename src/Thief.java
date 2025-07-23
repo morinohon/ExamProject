@@ -5,6 +5,6 @@ public class Thief extends Character {
     public void attack(Creature target){
         int damage = 5;
         System.out.println(this.getName() + "は素早く攻撃した！" + target.getName() + "に5のダメージを与えた！");
-        target.setHp(this.getHp() - damage);
+        target.setHp(target.getHp() - damage);
     }
 }

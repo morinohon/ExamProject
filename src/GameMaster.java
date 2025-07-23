@@ -44,7 +44,7 @@ public class GameMaster{
         System.out.println("\n" + "ダメージを受けた勇者が突然光りだした！");
         SuperHero sh = new SuperHero(h);
         party.set(party.indexOf(h), sh);
-        System.out.println("勇者はスーパーヒーローーに進化した！");
+        System.out.println("勇者はスーパーヒーローに進化した！");
         for(Monster m : monsters){
             sh.attack(m);
         }
@@ -61,6 +61,7 @@ public class GameMaster{
 
         System.out.println("\n" + "---敵グループ最終ステータス---");
         for(Monster m : monsters){
+            m.showStatus();
             if(m.isAlive()){
                 System.out.println("生存状況: 生存");
             }else {
